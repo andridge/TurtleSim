@@ -1,0 +1,8 @@
+prefix=/home/andre/Desktop/Untitled Folder/install
+
+Name: com760_Suhael_Ahmed
+Description: Description of com760_Suhael_Ahmed
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: rospy std_msgs message_runtime

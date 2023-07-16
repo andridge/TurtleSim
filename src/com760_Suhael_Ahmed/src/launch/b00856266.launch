@@ -1,0 +1,34 @@
+<launch>
+  <!-- Set a random background color -->
+  <param name="/turtlesim/background_r" value="$(eval 'import random; print(random.randint(0, 255))')"/>
+  <param name="/turtlesim/background_g" value="$(eval 'import random; print(random.randint(0, 255))')"/>
+  <param name="/turtlesim/background_b" value="$(eval 'import random; print(random.randint(0, 255))')"/>
+
+  <!-- Spawn turtles -->
+  <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+
+  <!-- Leader turtle -->
+  <node name="teleop_leader" pkg="turtlesim" type="turtle_teleop_key" output="screen"/>
+  <node name="leader_node" pkg="com760_Suhael_Ahmed" type="b00856266Leader.py" output="screen">
+    <param name="turtle_name" value="b00856266Leader"/>
+    <param name="start_x" value="5"/>
+    <param name="start_y" value="5"/>
+    <param name="start_theta" value="0.0"/>
+  </node>
+
+  <!-- Follower turtle A -->
+  <node name="spawn_follower_a" pkg="com760_Suhael_Ahmed" type="b00856266FollowerA.py" output="screen">
+    <param name="turtle_name" value="b00856266FollowerA"/>
+    <param name="start_x" value="2"/>
+    <param name="start_y" value="2"/>
+    <param name="start_theta" value="0.9561945"/>
+  </node>
+
+  <!-- Follower turtle B -->
+  <node name="spawn_follower_b" pkg="com760_Suhael_Ahmed" type="b00856266FollowerB.py" output="screen">
+    <param name="turtle_name" value="b00856266FollowerB"/>
+    <param name="start_x" value="3"/>
+    <param name="start_y" value="7"/>
+    <param name="start_theta" value="0.785398163"/>
+  </node>
+</launch>

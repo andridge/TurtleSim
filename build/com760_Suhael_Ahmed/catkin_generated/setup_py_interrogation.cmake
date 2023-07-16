@@ -1,0 +1,7 @@
+set(com760_Suhael_Ahmed_SETUP_PY_SETUP_MODULE "distutils.core")
+set(com760_Suhael_Ahmed_SETUP_PY_VERSION "0.0.0")
+set(com760_Suhael_Ahmed_SETUP_PY_SCRIPTS "")
+set(com760_Suhael_Ahmed_SETUP_PY_PACKAGES "com760_Suhael_Ahmed")
+set(com760_Suhael_Ahmed_SETUP_PY_PACKAGE_DIRS "src/com760_Suhael_Ahmed")
+set(com760_Suhael_Ahmed_SETUP_PY_MODULES "")
+set(com760_Suhael_Ahmed_SETUP_PY_MODULE_DIRS "")
