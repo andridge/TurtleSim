@@ -1,7 +1,5 @@
 
 
-https://github.com/andridge/TurtleSim/assets/46260701/1b00e613-4193-4ec9-8af8-4c6cabde3bdf
-
 
 ## Readme File
 
